@@ -5,6 +5,8 @@
  */
 package domain;
 
+import java.io.IOException;
+
 /**
  *
  * @author Nacho
@@ -29,13 +31,21 @@ public class Home extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         titleLabel = new javax.swing.JLabel();
-        UniversityNameLabel = new javax.swing.JLabel();
+        universityNameLabel = new javax.swing.JLabel();
+        addEmployeeBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         titleLabel.setText("Control de Horas Trabajadas");
 
-        UniversityNameLabel.setText("TEC");
+        universityNameLabel.setText("TEC");
+
+        addEmployeeBtn.setText("Agregar Empleado");
+        addEmployeeBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addEmployeeBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -45,7 +55,8 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(titleLabel)
-                    .addComponent(UniversityNameLabel))
+                    .addComponent(universityNameLabel)
+                    .addComponent(addEmployeeBtn))
                 .addContainerGap(366, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -54,8 +65,10 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(titleLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(UniversityNameLabel)
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addComponent(universityNameLabel)
+                .addGap(18, 18, 18)
+                .addComponent(addEmployeeBtn)
+                .addContainerGap(57, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -78,10 +91,14 @@ public class Home extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void addEmployeeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addEmployeeBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addEmployeeBtnActionPerformed
+
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[]){
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -114,8 +131,9 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel UniversityNameLabel;
+    private javax.swing.JButton addEmployeeBtn;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel titleLabel;
+    private javax.swing.JLabel universityNameLabel;
     // End of variables declaration//GEN-END:variables
 }

@@ -50,7 +50,8 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="titleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="UniversityNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="universityNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="addEmployeeBtn" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="366" max="32767" attributes="0"/>
               </Group>
@@ -62,8 +63,10 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="titleLabel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="UniversityNameLabel" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="100" max="32767" attributes="0"/>
+                  <Component id="universityNameLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="addEmployeeBtn" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="57" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -74,10 +77,18 @@
             <Property name="text" type="java.lang.String" value="Control de Horas Trabajadas"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="UniversityNameLabel">
+        <Component class="javax.swing.JLabel" name="universityNameLabel">
           <Properties>
             <Property name="text" type="java.lang.String" value="TEC"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="addEmployeeBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Agregar Empleado"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addEmployeeBtnActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
