@@ -13,7 +13,7 @@ public class University {
     private String name, location;
     private int legalID, employeeCount;
     
-    //Blank Constructor
+    //Blank constructor
     public University() {
     }
     
@@ -25,7 +25,8 @@ public class University {
         this.employeeCount = employeeCount;
     }
 
-    //Getters And Setters
+    //Getters and setters
+    
     public String getName() {
         return name;
     }
