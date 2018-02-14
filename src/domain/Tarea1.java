@@ -21,7 +21,7 @@ public class Tarea1 {
             public void run() {
                 new Home().setVisible(true);
             }
-        });
+        });//
         // TODO code application logic here
     }
     
